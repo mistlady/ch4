@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    /*Fonts*/
+    --font-family: 'Inter', sans-serif;
+    --font-size: 16px;
+    --font-weight-reg: 400;
+    --font-weight-bold: 700;
+    /*Colors*/
+    --background-color:#B9B4C7;
+    --secondry-color:  #FAF0E6;
+    --text-color: #352F44;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-reg);
+    line-height: 1.5;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    width: 100vw;
+    display: grid;
+    margin: 20px;
+    padding: 10px;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 300px repeat(4,80px) 300px;
+    grid-template-rows: 30px;
+    margin-bottom: 30px;
+}
+img{
+    width: 30px;
+    height: 30px;
+    align-items: end;
+}
+input{
+    border-radius: 5px;
+    padding: 10px;
+}
+button{
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+main{
+    padding: 20px; 
+    min-height: 50vh;
+    width: 550px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 550px;
+    margin-bottom: 2rem;
+    border: 1px solid var(--secondry-color);
+    background-color: var(--secondry-color);
+    border-radius: 5px;
+}
+.UserData img{
+    height: auto;
+    width: 400px;
+    padding-top: 20px;
+}
+.UserData p{
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-color);
+}
+
